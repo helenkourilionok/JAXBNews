@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:website xmlns:ns2="http://www.training.by/news">
+    <category name="films">
+        <subcategory name="horror story">
+            <news>
+                <news-name>Dark Tower</news-name>
+                <provider>
+                    <author>Ivanov I.I.</author>
+                    <author>Petrov I.I.</author>
+                </provider>
+                <data-of_issue>2016-05-30+03:00</data-of_issue>
+                <news-body>This year new horror film is created by XXX.
+                This film is based on book 
+                that was written by Stiven King</news-body>
+            </news>
+            <news>
+                <news-name>007</news-name>
+                <provider>
+                    <author>Popov I.I.</author>
+                    <author>Joya I.I.</author>
+                </provider>
+                <data-of_issue>2016-05-28+03:00</data-of_issue>
+                <news-body>Next year we will see new film about live of agent 007</news-body>
+            </news>
+        </subcategory>
+    </category>
+    <category name="disks">
+        <subcategory name="games">
+            <news>
+                <news-name>Lara Croft</news-name>
+                <provider>
+                    <author>Kovalev I.P.</author>
+                    <author>Vorobey L.P</author>
+                </provider>
+                <data-of_issue>2016-05-31+03:00</data-of_issue>
+                <news-body>Nowadays Lara Croft is the most popular game and during this week you can buy previous one and play</news-body>
+            </news>
+        </subcategory>
+    </category>
+    <category name="books">
+        <subcategory name="detective stories">
+            <news>
+                <news-name>Continuattion story about Harry Potter</news-name>
+                <provider>
+                    <author>Lobach I.P.</author>
+                    <author>Miheev L.P</author>
+                </provider>
+                <data-of_issue>2016-05-31+03:00</data-of_issue>
+                <news-body>Nowadays Harry Potter is the most popular book and probably in futute we will read book about children of HP</news-body>
+            </news>
+        </subcategory>
+    </category>
+</ns2:website>

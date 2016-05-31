@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://www.training.by/news" 
+		xmlns="http://www.w3.org/2001/XMLSchema" 
+		xmlns:tns="http://www.training.by/news">
+		<element name="website">
+			<complexType>
+				<sequence>
+					<element name="category" type="tns:Category" minOccurs="1" maxOccurs="unbounded" />
+				</sequence>
+			</complexType>
+		</element>
+		<simpleType name="Name">
+			<restriction base="string">
+				<enumeration value="films"></enumeration>
+				<enumeration value="disks"></enumeration>
+				<enumeration value="books"></enumeration>
+			</restriction>
+		</simpleType>
+		<complexType name="Category">
+			<sequence>
+				<element name="subcategory" type="tns:Subcategory" minOccurs="1"  maxOccurs="unbounded"/>
+			</sequence>
+			<attribute name="name" type="tns:Name" use="required" />
+		</complexType>
+		<complexType name="Subcategory">
+			<sequence>
+				<element name="news" type="tns:News" minOccurs="1"  maxOccurs="unbounded"/>
+			</sequence>
+			<attribute name="name" type="string" use="required" />
+		</complexType>
+		<complexType name="News">
+			<sequence>
+				<element name="news-name" type="string" />
+				<element name="provider" type="tns:Provider"/>
+				<element name="data-of_issue" type="date" /> 
+				<element name="news-body" type="string" />
+			</sequence>		
+		</complexType>
+		<complexType name="Provider">
+			<sequence>
+				<element name="author" type="string" minOccurs="1" maxOccurs="unbounded"/>
+			</sequence>
+		</complexType>
+</schema>
